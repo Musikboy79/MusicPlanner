@@ -11,21 +11,34 @@ namespace MusicPlanner
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class NewMonthlyMusic
     {
         public int MusicID { get; set; }
         public System.DateTime Date { get; set; }
+
+        [DisplayName("Church Day")]
         public string churchDay { get; set; }
         public string Opening { get; set; }
+
+        [DisplayName("Open Num")]
         public string OpeningNumber { get; set; }
         public string Psalm { get; set; }
+
+        [DisplayName("Psalm Num")]
         public string PsalmNumber { get; set; }
         public string Preparation { get; set; }
+
+        [DisplayName("Prep Num")]
         public string PreparationNumber { get; set; }
         public string Communion { get; set; }
+
+        [DisplayName("Comm. Num")]
         public string CommunionNumber { get; set; }
         public string Closing { get; set; }
+
+        [DisplayName("Close Num")]
         public string ClosingNumber { get; set; }
         public string Notes { get; set; }
     }
