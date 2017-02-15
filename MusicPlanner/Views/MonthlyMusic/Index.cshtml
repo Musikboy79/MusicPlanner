@@ -1,0 +1,105 @@
+﻿@model IEnumerable<MusicPlanner.NewMonthlyMusic>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.churchDay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Opening)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OpeningNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Psalm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PsalmNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Preparation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PreparationNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Communion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommunionNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Closing)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClosingNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.churchDay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Opening)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OpeningNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Psalm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PsalmNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Preparation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PreparationNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Communion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CommunionNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Closing)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClosingNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Notes)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MusicID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MusicID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MusicID })
+        </td>
+    </tr>
+}
+
+</table>

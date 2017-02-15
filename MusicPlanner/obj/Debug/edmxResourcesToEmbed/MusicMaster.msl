@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MusicMasterModelStoreContainer" CdmEntityContainer="MusicMasterEntities">
+    <EntitySetMapping Name="Choir">
+      <EntityTypeMapping TypeName="MusicMasterModel.Choir">
+        <MappingFragment StoreEntitySet="Choir">
+          <ScalarProperty Name="ChoirID" ColumnName="ChoirID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewMonthlyMusic">
+      <EntityTypeMapping TypeName="MusicMasterModel.NewMonthlyMusic">
+        <MappingFragment StoreEntitySet="NewMonthlyMusic">
+          <ScalarProperty Name="MusicID" ColumnName="MusicID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="churchDay" ColumnName="churchDay" />
+          <ScalarProperty Name="Opening" ColumnName="Opening" />
+          <ScalarProperty Name="OpeningNumber" ColumnName="OpeningNumber" />
+          <ScalarProperty Name="Psalm" ColumnName="Psalm" />
+          <ScalarProperty Name="PsalmNumber" ColumnName="PsalmNumber" />
+          <ScalarProperty Name="Preparation" ColumnName="Preparation" />
+          <ScalarProperty Name="PreparationNumber" ColumnName="PreparationNumber" />
+          <ScalarProperty Name="Communion" ColumnName="Communion" />
+          <ScalarProperty Name="CommunionNumber" ColumnName="CommunionNumber" />
+          <ScalarProperty Name="Closing" ColumnName="Closing" />
+          <ScalarProperty Name="ClosingNumber" ColumnName="ClosingNumber" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
