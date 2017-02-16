@@ -9,7 +9,9 @@ namespace MusicPlanner
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery-ui.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -25,7 +27,10 @@ namespace MusicPlanner
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/cyborg.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/themes/base/datepicker.css",
+                      "~/Content/jquery-ui.theme.css"
+                      ));
         }
     }
 }

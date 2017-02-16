@@ -1,0 +1,122 @@
+﻿@model MusicPlanner.NewMonthlyMusic
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NewMonthlyMusic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.churchDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.churchDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Opening)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Opening)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OpeningNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OpeningNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Psalm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Psalm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PsalmNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PsalmNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Preparation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Preparation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PreparationNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PreparationNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Communion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Communion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CommunionNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CommunionNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Closing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Closing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClosingNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClosingNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MusicID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
