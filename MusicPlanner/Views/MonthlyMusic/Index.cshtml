@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<MusicPlanner.NewMonthlyMusic>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Monthly Music";
 }
 
-<h2>Index</h2>
+<h2>Monthly Music</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="@Url.Action("Create", "MonthlyMusic")" class="btn btn-primary">Create</a>
 </p>
 <table class="table">
     <tr>
