@@ -31,6 +31,10 @@ namespace MusicPlanner
                       "~/Content/themes/base/datepicker.css",
                       "~/Content/jquery-ui.theme.css"
                       ));
+
+            bundles.Add(new ScriptBundle("~/bundles/carousel").Include(
+            "~/Scripts/carousel.js"));
+
         }
     }
 }

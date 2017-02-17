@@ -293,6 +293,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\musicbg1.jpg" />
+    <Content Include="images\musicbg10.jpg" />
+    <Content Include="images\musicbg11.jpg" />
+    <Content Include="images\musicbg12.jpg" />
+    <Content Include="images\musicbg2.jpg" />
+    <Content Include="images\musicbg3.jpg" />
+    <Content Include="images\musicbg4.jpg" />
+    <Content Include="images\musicbg5.jpg" />
+    <Content Include="images\musicbg6.jpg" />
+    <Content Include="images\musicbg7.jpg" />
+    <Content Include="images\musicbg8.jpg" />
+    <Content Include="images\musicbg9.jpg" />
     <Content Include="MusicMaster.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MusicMaster.edmx</DependentUpon>
@@ -317,6 +329,7 @@
     </Content>
     <None Include="Properties\PublishProfiles\Web Server.pubxml" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
+    <Content Include="Scripts\carousel.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
     <Content Include="Scripts\jquery-1.12.4.min.map" />
