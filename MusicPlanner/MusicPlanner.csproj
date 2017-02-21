@@ -236,6 +236,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cyborg-min.css" />
     <Content Include="Content\cyborg.css" />
+    <Content Include="Content\jCarousel.css" />
+    <Content Include="Content\jcarousel.transitions.css" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery-ui.theme.css" />
     <Content Include="Content\themes\base\accordion.css" />
@@ -330,6 +332,7 @@
     <None Include="Properties\PublishProfiles\Web Server.pubxml" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\carousel.js" />
+    <Content Include="Scripts\jCarousel.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
     <Content Include="Scripts\jquery-1.12.4.min.map" />
