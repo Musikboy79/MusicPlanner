@@ -6,10 +6,17 @@
 
 <h2>Monthly Music</h2>
 
+<style>
+   th {
+       white-space: nowrap;
+   }
+
+</style>
+
 <p>
     <a href="@Url.Action("Create", "MonthlyMusic")" class="btn btn-primary">Create</a>
 </p>
-<table class="table">
+<table class="table table-responsive">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Date)
@@ -94,9 +101,8 @@
         <td>
             @Html.DisplayFor(modelItem => item.Notes)
         </td>
-        <td>
+        <td style="white-space: nowrap;">
             @Html.ActionLink("Edit", "Edit", new { id=item.MusicID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MusicID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.MusicID })
         </td>
     </tr>
