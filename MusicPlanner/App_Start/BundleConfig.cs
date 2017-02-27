@@ -21,9 +21,6 @@ namespace MusicPlanner
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jCarousel").Include(
-            "~/Scripts/jCarousel.js"));
-
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
@@ -34,11 +31,6 @@ namespace MusicPlanner
                       "~/Content/themes/base/datepicker.css",
                       "~/Content/jquery-ui.theme.css"
                       ));
-
-            bundles.Add(new StyleBundle("~/Content/jcarousel").Include(
-                "~/Content/jCarousel.css",
-                "~/Content/jcarousel.transitions.css"
-                ));
         }
     }
 }

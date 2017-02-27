@@ -161,3 +161,5 @@ D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.MicrosoftAc
 D:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.csprojResolveAssemblyReference.cache
 D:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.dll
 D:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.pdb
+D:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg1.jpg
+D:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg2.jpg
