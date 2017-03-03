@@ -92,6 +92,8 @@ D:\Development\MusicPlanner\MusicPlanner\bin\roslyn\System.Reflection.Metadata.d
 D:\Development\MusicPlanner\MusicPlanner\bin\roslyn\vbc.exe
 D:\Development\MusicPlanner\MusicPlanner\bin\roslyn\VBCSCompiler.exe
 D:\Development\MusicPlanner\MusicPlanner\bin\roslyn\VBCSCompiler.exe.config
+D:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg1.jpg
+D:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg2.jpg
 D:\Development\MusicPlanner\MusicPlanner\bin\MusicPlanner.dll.config
 D:\Development\MusicPlanner\MusicPlanner\bin\MusicPlanner.dll
 D:\Development\MusicPlanner\MusicPlanner\bin\MusicPlanner.pdb
@@ -119,6 +121,7 @@ D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.MicrosoftAc
 D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.OAuth.dll
 D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.Twitter.dll
 D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Web.Infrastructure.dll
+D:\Development\MusicPlanner\MusicPlanner\bin\MvcReportViewer.dll
 D:\Development\MusicPlanner\MusicPlanner\bin\Newtonsoft.Json.dll
 D:\Development\MusicPlanner\MusicPlanner\bin\Owin.dll
 D:\Development\MusicPlanner\MusicPlanner\bin\System.Web.Helpers.dll
@@ -158,8 +161,5 @@ D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.Google.xml
 D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.csprojResolveAssemblyReference.cache
 D:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.dll
 D:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.pdb
-D:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg1.jpg
-D:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg2.jpg
