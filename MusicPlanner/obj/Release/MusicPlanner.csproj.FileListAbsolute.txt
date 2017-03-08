@@ -165,3 +165,5 @@ D:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.pdb
 D:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg1.jpg
 D:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg2.jpg
 D:\Development\MusicPlanner\MusicPlanner\bin\MvcReportViewer.dll
+D:\Development\MusicPlanner\MusicPlanner\bin\Dapper.dll
+D:\Development\MusicPlanner\MusicPlanner\bin\Dapper.xml

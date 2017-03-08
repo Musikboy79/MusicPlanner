@@ -14,12 +14,14 @@ namespace MusicPlanner.Controllers
 {
     public class FileUploadDownloadController : Controller
     {
+        [Authorize]
         // GET: FileUploadDownload
         public ActionResult FileUpload()
         {
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         public ActionResult FileUpload(HttpPostedFileBase files)
         {
@@ -44,6 +46,7 @@ namespace MusicPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet]
         public FileResult DownloadFile (int id)
         {
@@ -55,6 +58,7 @@ namespace MusicPlanner.Controllers
             return File(FileById.FileContent, "application/pdf", FileById.FileName);
         }
 
+        [Authorize]
         [HttpGet]
         public PartialViewResult FileDetails()
         {
@@ -62,6 +66,8 @@ namespace MusicPlanner.Controllers
 
             return PartialView("FileDetails", DetList);
         }
+
+        [Authorize]
         private List<FileDetailsModel> GetFileList()
         {
             List<FileDetailsModel> DetList = new List<FileDetailsModel>();
@@ -73,6 +79,7 @@ namespace MusicPlanner.Controllers
             return DetList;
         }
 
+        [Authorize]
         private void SaveFileDetails(FileDetailsModel objDet)
         {
             DynamicParameters Parm = new DynamicParameters();
