@@ -163,3 +163,5 @@ D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.dll
 D:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.pdb
+D:\Development\MusicPlanner\MusicPlanner\bin\Dapper.dll
+D:\Development\MusicPlanner\MusicPlanner\bin\Dapper.xml

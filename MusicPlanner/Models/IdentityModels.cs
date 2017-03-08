@@ -29,5 +29,7 @@ namespace MusicPlanner.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MusicPlanner.Models.FileDetailsModel> FileDetailsModels { get; set; }
     }
 }
