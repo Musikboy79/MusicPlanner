@@ -51,24 +51,24 @@
             var oTable = $('#musicDatatable').DataTable({
                 "ajax": {
                     "url": '/MonthlyMusicDT/GetMusic',
-                    "type": "get" ,
+                    "type": "get",
                     "datatype": "json"
                 },
                 "columns": [
-                    {"data": "Date", "autoWidth": true},
-                    { "data": "churchDay", "autoWidth": true },
-                {"data": "Opening", "autoWidth": true}, 
-                {"data": "OpeningNumber", "autoWidth": true},
-                 {"data": "Psalm", "autoWidth": true},
-                  { "data": "PsalmNumber", "autoWidth": true },
-                   { "data": "Preparation", "autoWidth": true },
-                    { "data": "PreparationNumber", "autoWidth": true },
-                     { "data": "Communion", "autoWidth": true },
-                      { "data": "CommunionNumber", "autoWidth": true },
-                       { "data": "Closing", "autoWidth": true },
-                        { "data": "ClosingNumber", "autoWidth": true },
-                         { "data": "Notes", "autoWidth": true },
-                          {
+                { "data": "Date", "autoWidth": true },
+                { "data": "churchDay", "autoWidth": true },
+                { "data": "Opening", "autoWidth": true },
+                { "data": "OpeningNumber", "autoWidth": true },
+                { "data": "Psalm", "autoWidth": true },
+                { "data": "PsalmNumber", "autoWidth": true },
+                { "data": "Preparation", "autoWidth": true },
+                { "data": "PreparationNumber", "autoWidth": true },
+                { "data": "Communion", "autoWidth": true },
+                { "data": "CommunionNumber", "autoWidth": true },
+                { "data": "Closing", "autoWidth": true },
+                { "data": "ClosingNumber", "autoWidth": true },
+                { "data": "Notes", "autoWidth": true },
+                {
                               "data": "MusicID", "width": "50px", "render": function (data) {
                                   return '<a class="popup" href="/home/save' + data + '">Edit</a>';
                               }
@@ -110,4 +110,3 @@
     </script>
 </body>
 </html>
-
