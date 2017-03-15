@@ -11,7 +11,7 @@
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/Scripts/DataTables/dataTables.jqueryui.js"></script>
     <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-
+<link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
 
     <script>
         $(document).ready(function () {
@@ -23,13 +23,25 @@
     </script>
 }
 
-<h2>Monthly Music</h2>
-
 <style>
-    th {
+    table.dataTable tbody tr {
+        background-color: #222222 !important;
+    }
+
+        th {
         white-space: nowrap;
     }
+
+        .dataTables_info {
+            color: #333;
+        }
+
+        .dataTables_paginate {
+            color: #333;
+        }
 </style>
+
+<h2>Monthly Music</h2>
 
 <p>
     <a href="@Url.Action("Create", "MonthlyMusic")" class="btn btn-primary">Create</a>
@@ -73,9 +85,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.ClosingNumber)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Notes)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -118,9 +127,6 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.ClosingNumber)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Notes)
                 </td>
                 <td style="white-space: nowrap;">
                     @Html.ActionLink("Edit", "Edit", new { id = item.MusicID }) |
