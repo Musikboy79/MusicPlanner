@@ -4,108 +4,136 @@
     ViewBag.Title = "Monthly Music";
 }
 
-<h2>Monthly Music</h2>
+@section Scripts{
+    <script src="~/Scripts/jquery-3.1.1.min.js"> </script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/DataTables/dataTables.jqueryui.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+<link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $('#musicTable').dataTable({
+                "bpaginate": true,
+                "sPaginationType": "full_numbers",
+                "order": [[1, "desc"]]
+            });
+        });
+    </script>
+}
 
 <style>
-   th {
-       white-space: nowrap;
-   }
+    table.dataTable tbody tr {
+        background-color: #222222 !important;
+    }
 
+        th {
+        white-space: nowrap;
+    }
+
+        .dataTables_info {
+            color: #333;
+        }
+
+        .dataTables_paginate {
+            color: #333;
+        }
 </style>
+
+<h2>Monthly Music</h2>
 
 <p>
     <a href="@Url.Action("Create", "MonthlyMusic")" class="btn btn-primary">Create</a>
 </p>
-<table class="table table-responsive">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Date)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.churchDay)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Opening)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OpeningNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Psalm)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PsalmNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Preparation)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PreparationNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Communion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CommunionNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Closing)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ClosingNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Notes)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Date)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.churchDay)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Opening)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OpeningNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Psalm)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PsalmNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Preparation)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PreparationNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Communion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CommunionNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Closing)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ClosingNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Notes)
-        </td>
-        <td style="white-space: nowrap;">
-            @Html.ActionLink("Edit", "Edit", new { id=item.MusicID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MusicID })
-        </td>
-    </tr>
-}
-
+<table id="musicTable" class="table table-responsive">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.churchDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Opening)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OpeningNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Psalm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PsalmNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Preparation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreparationNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Communion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommunionNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Closing)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClosingNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.churchDay)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Opening)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OpeningNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Psalm)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PsalmNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Preparation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PreparationNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Communion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CommunionNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Closing)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClosingNumber)
+                </td>
+                <td style="white-space: nowrap;">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MusicID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MusicID })
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>

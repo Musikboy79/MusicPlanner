@@ -216,7 +216,6 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MonthlyMusicController.cs" />
-    <Compile Include="Controllers\MonthlyMusicDTController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -634,7 +633,6 @@
     <Content Include="Views\MonthlyMusic\Index.cshtml" />
     <Content Include="Views\FileUploadDownload\FileUpload.cshtml" />
     <Content Include="Views\FileUploadDownload\FileDetails.cshtml" />
-    <Content Include="Views\MonthlyMusicDT\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

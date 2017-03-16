@@ -18,7 +18,7 @@
             $('#musicTable').dataTable({
                 "bpaginate": true,
                 "sPaginationType": "full_numbers",
-                "order": [[1, "desc"]]
+                "order": [[0, "desc"]]
             });
         });
     </script>
@@ -39,6 +39,14 @@
 
         .dataTables_paginate {
             color: #333;
+        }
+        
+        .dataTables_wrapper {
+            width: 1400px;
+        }
+
+        .body-content{
+            margin-left: 200px;
         }
 </style>
 
