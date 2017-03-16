@@ -50,6 +50,8 @@ namespace MusicPlanner
         [Required]
         [DisplayName("Close Num")]
         public string ClosingNumber { get; set; }
+
+        [DataType(DataType.MultilineText)]
         public string Notes { get; set; }
     }
 }
