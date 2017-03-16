@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MusicPlanner
+namespace MusicPlanner.Models
 {
     using System;
     using System.Data.Entity;
@@ -27,7 +27,5 @@ namespace MusicPlanner
     
         public virtual DbSet<Choir> Choir { get; set; }
         public virtual DbSet<NewMonthlyMusic> NewMonthlyMusic { get; set; }
-
-        public System.Data.Entity.DbSet<MusicPlanner.Models.FileDetailsModel> FileDetailsModels { get; set; }
     }
 }

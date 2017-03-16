@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MusicPlanner
+namespace MusicPlanner.Models
 {
     using System;
     using System.Collections.Generic;

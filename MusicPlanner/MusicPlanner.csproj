@@ -208,7 +208,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Choir.cs">
+    <Compile Include="Models\Choir.cs">
       <DependentUpon>MusicMaster.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
@@ -225,22 +225,23 @@
     <Compile Include="Models\FileModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="MusicMaster.Context.cs">
+    <Compile Include="Models\MonthlyMusicViewModel.cs" />
+    <Compile Include="Models\MusicMaster.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MusicMaster.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="MusicMaster.cs">
+    <Compile Include="Models\MusicMaster.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MusicMaster.tt</DependentUpon>
     </Compile>
-    <Compile Include="MusicMaster.Designer.cs">
+    <Compile Include="Models\MusicMaster.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MusicMaster.edmx</DependentUpon>
     </Compile>
-    <Compile Include="NewMonthlyMusic.cs">
+    <Compile Include="Models\NewMonthlyMusic.cs">
       <DependentUpon>MusicMaster.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -469,12 +470,12 @@
     <Content Include="images\musicbg7.jpg" />
     <Content Include="images\musicbg8.jpg" />
     <Content Include="images\musicbg9.jpg" />
-    <Content Include="MusicMaster.Context.tt">
+    <Content Include="Models\MusicMaster.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MusicMaster.edmx</DependentUpon>
       <LastGenOutput>MusicMaster.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="MusicMaster.tt">
+    <Content Include="Models\MusicMaster.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MusicMaster.edmx</DependentUpon>
       <LastGenOutput>MusicMaster.cs</LastGenOutput>
@@ -486,11 +487,11 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="MusicMaster.edmx">
+    <EntityDeploy Include="Models\MusicMaster.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>MusicMaster.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="MusicMaster.edmx.diagram">
+    <Content Include="Models\MusicMaster.edmx.diagram">
       <DependentUpon>MusicMaster.edmx</DependentUpon>
     </Content>
     <Content Include="Content\DataTables\css\semanticui.scss" />

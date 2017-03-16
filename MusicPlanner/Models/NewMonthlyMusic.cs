@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MusicPlanner
+namespace MusicPlanner.Models
 {
     using System;
     using System.Collections.Generic;
@@ -17,7 +17,6 @@ namespace MusicPlanner
     public partial class NewMonthlyMusic
     {
         public int MusicID { get; set; }
-
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}", ApplyFormatInEditMode = true)]
         public System.DateTime Date { get; set; }
