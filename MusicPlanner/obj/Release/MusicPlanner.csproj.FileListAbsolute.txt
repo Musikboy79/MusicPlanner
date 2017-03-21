@@ -254,3 +254,8 @@ G:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.MicrosoftAc
 G:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.csprojResolveAssemblyReference.cache
 G:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.dll
 G:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.pdb
+F:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg1.jpg
+F:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg2.jpg
+F:\Development\MusicPlanner\MusicPlanner\bin\Dapper.dll
+F:\Development\MusicPlanner\MusicPlanner\bin\MvcReportViewer.dll
+F:\Development\MusicPlanner\MusicPlanner\bin\Dapper.xml

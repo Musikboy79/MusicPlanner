@@ -58,6 +58,7 @@
 <table id="musicTable" class="table table-responsive">
     <thead>
         <tr>
+            <th></th>
             <th>
                 @Html.DisplayNameFor(model => model.Date)
             </th>
@@ -94,13 +95,16 @@
             <th>
                 @Html.DisplayNameFor(model => model.ClosingNumber)
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
+                <td style="white-space: nowrap;">
+                    <a href="@Url.Action("Edit","MonthlyMusic", new {id=item.MusicID})" title="Edit Monthly Music" class="btn btn-primary">Edit</a>
+                    <a href="@Url.Action("Delete","MonthlyMusic", new {id=item.MusicID})" title="Delete Entry" class="btn btn-danger">Delete</a>
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Date)
                 </td>
@@ -136,10 +140,6 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.ClosingNumber)
-                </td>
-                <td style="white-space: nowrap;">
-                    @Html.ActionLink("Edit", "Edit", new { id = item.MusicID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.MusicID })
                 </td>
             </tr>
         }
