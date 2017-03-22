@@ -208,6 +208,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\ChoirController.cs" />
     <Compile Include="Models\Choir.cs">
       <DependentUpon>MusicMaster.tt</DependentUpon>
     </Compile>
@@ -634,6 +635,11 @@
     <Content Include="Views\MonthlyMusic\Index.cshtml" />
     <Content Include="Views\FileUploadDownload\FileUpload.cshtml" />
     <Content Include="Views\FileUploadDownload\FileDetails.cshtml" />
+    <Content Include="Views\Choir\Create.cshtml" />
+    <Content Include="Views\Choir\Delete.cshtml" />
+    <Content Include="Views\Choir\Details.cshtml" />
+    <Content Include="Views\Choir\Edit.cshtml" />
+    <Content Include="Views\Choir\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
