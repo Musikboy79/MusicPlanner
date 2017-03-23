@@ -38,6 +38,6 @@ namespace MusicPlanner.Models
         [DisplayName("Cell Ph.")]
         public string CellPhone { get; set; }
         public string Email { get; set; }
-        public Nullable<bool> Active { get; set; }
+        public bool Active { get; set; }
     }
 }
