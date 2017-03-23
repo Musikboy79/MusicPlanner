@@ -11,17 +11,31 @@ namespace MusicPlanner.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Choir
     {
         public int ChoirID { get; set; }
+
+        [Required]
+        [DisplayName("First Name")]
         public string FirstName { get; set; }
+
+        [Required]
+        [DisplayName("Last Name")]
         public string LastName { get; set; }
+
+        [DisplayName("Address")]
         public string Address1 { get; set; }
         public string City { get; set; }
         public string State { get; set; }
         public Nullable<int> Zip { get; set; }
+
+        [DisplayName("Home Ph.")]
         public string HomePhone { get; set; }
+
+        [DisplayName("Cell Ph.")]
         public string CellPhone { get; set; }
         public string Email { get; set; }
         public Nullable<bool> Active { get; set; }
