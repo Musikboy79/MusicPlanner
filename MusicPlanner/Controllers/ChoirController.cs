@@ -18,7 +18,11 @@ namespace MusicPlanner.Controllers
         // GET: Choir
         public ActionResult Index()
         {
-            return View(db.Choir.ToList());
+            var model = from r in db.Choir
+                        orderby r.LastName
+                        where r.Active == true
+                        select r;
+            return View(model.ToList());
         }
 
         [Authorize]
