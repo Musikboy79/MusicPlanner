@@ -25,6 +25,12 @@ namespace MusicPlanner.Controllers
             return View(model.ToList());
         }
 
+        // GET: Choir Unfiltered
+        public ActionResult UnIndex()
+        {
+            return View(db.Choir.ToList());
+        }
+
         [Authorize]
         // GET: Choir/Details/5
         public ActionResult Details(int? id)

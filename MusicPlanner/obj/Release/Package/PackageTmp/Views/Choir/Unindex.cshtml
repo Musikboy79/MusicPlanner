@@ -14,7 +14,7 @@
 
     <script>
         $(document).ready(function () {
-           var table =  $('#choirTable').dataTable({
+            var table = $('#choirTable').dataTable({
                 "bpaginate": true,
                 "sPaginationType": "full_numbers",
                 "order": [[2, "asc"]]
@@ -51,9 +51,9 @@
 
 <h2>Create New Choir Member</h2>
 <p>
-   <a href="@Url.Action("Create", "Choir")" class="btn btn-primary">Create</a>
-    <a href="@Url.Action("Unindex" ,"Choir")" class="btn btn-info">Unfilter</a>
+    <a href="@Url.Action("Create", "Choir")" class="btn btn-primary">Create</a>
 </p>
+
 <table id="choirTable" class="table table-responsive">
     <thead>
         <tr>
@@ -95,7 +95,7 @@
         {
             <tr>
                 <td>
-                    <a href="@Url.Action("Edit","Choir", new {id=item.ChoirID})" title="Edit Choir Member" class="btn btn-primary">Edit</a> 
+                    <a href="@Url.Action("Edit","Choir", new {id=item.ChoirID})" title="Edit Choir Member" class="btn btn-primary">Edit</a>
                     <a href="@Url.Action("Delete","Choir", new {id=item.ChoirID})" title="Delete Choir Member" class="btn btn-danger">Delete</a>
                 </td>
                 <td>

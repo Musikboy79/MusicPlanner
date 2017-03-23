@@ -14,10 +14,10 @@
 
     <script>
         $(document).ready(function () {
-            $('#choirTable').dataTable({
+           var table =  $('#choirTable').dataTable({
                 "bpaginate": true,
                 "sPaginationType": "full_numbers",
-                "order": [[2, "desc"]]
+                "order": [[2, "asc"]]
             });
         });
     </script>
@@ -52,6 +52,7 @@
 <h2>Create New Choir Member</h2>
 <p>
    <a href="@Url.Action("Create", "Choir")" class="btn btn-primary">Create</a>
+    <a href="@Url.Action("Unindex" ,"Choir")" class="btn btn-info">Unfilter</a>
 </p>
 <table id="choirTable" class="table table-responsive">
     <thead>

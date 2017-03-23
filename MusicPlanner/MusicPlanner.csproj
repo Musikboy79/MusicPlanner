@@ -640,6 +640,7 @@
     <Content Include="Views\Choir\Details.cshtml" />
     <Content Include="Views\Choir\Edit.cshtml" />
     <Content Include="Views\Choir\Index.cshtml" />
+    <Content Include="Views\Choir\Unindex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
