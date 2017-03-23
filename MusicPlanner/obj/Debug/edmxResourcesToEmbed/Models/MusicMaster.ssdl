@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MusicMasterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Choir">
+    <Key>
+      <PropertyRef Name="ChoirID" />
+    </Key>
+    <Property Name="ChoirID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address1" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="State" Type="nvarchar" MaxLength="5" />
+    <Property Name="Zip" Type="int" />
+    <Property Name="HomePhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="CellPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="NewMonthlyMusic">
+    <Key>
+      <PropertyRef Name="MusicID" />
+    </Key>
+    <Property Name="MusicID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="churchDay" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Opening" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OpeningNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Psalm" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PsalmNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Preparation" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PreparationNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Communion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CommunionNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Closing" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ClosingNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="MusicMasterModelStoreContainer">
+    <EntitySet Name="Choir" EntityType="Self.Choir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewMonthlyMusic" EntityType="Self.NewMonthlyMusic" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
