@@ -27,3 +27,11 @@ textarea {
 .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
     color: transparent;
 }
+
+.panel {
+    margin-top: 50px !important;
+}
+
+#choirForm{
+    margin-left: 50px !important;
+}
