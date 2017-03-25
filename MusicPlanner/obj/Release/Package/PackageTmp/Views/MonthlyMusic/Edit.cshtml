@@ -44,6 +44,8 @@
             <div class="form-horizontal" id="musicForm">
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.MusicID)
+
 
                 <div class="row">
                     <div class="col-md-3">

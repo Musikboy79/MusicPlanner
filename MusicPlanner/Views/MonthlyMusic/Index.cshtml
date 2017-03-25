@@ -11,7 +11,7 @@
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/Scripts/DataTables/dataTables.jqueryui.js"></script>
     <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-<link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
+    <link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
 
     <script>
         $(document).ready(function () {
@@ -29,31 +29,35 @@
         background-color: #222222 !important;
     }
 
-        th {
+    th {
         white-space: nowrap;
     }
 
-        .dataTables_info {
-            color: #333;
-        }
+    .dataTables_info {
+        color: #333;
+    }
 
-        .dataTables_paginate {
-            color: #333;
-        }
-        
-        .dataTables_wrapper {
-            width: 1400px;
-        }
+    .dataTables_paginate {
+        color: #333;
+    }
 
-        .body-content{
-            margin-left: 200px;
-        }
+    .dataTables_wrapper {
+        width: 1400px;
+    }
+
+    .body-content {
+        margin-left: 200px;
+    }
+
+    div.dataTables_wrapper {
+        background-color: #2a9fd6 !important;
+    }
 </style>
 
 <h2>Monthly Music</h2>
 
 <p>
-    <a href="@Url.Action("Create", "MonthlyMusic")" class="btn btn-primary">Create</a>
+    <a href="@Url.Action("Create", "MonthlyMusic")" class="btn btn-info">Create</a>
 </p>
 <table id="musicTable" class="table table-responsive">
     <thead>
