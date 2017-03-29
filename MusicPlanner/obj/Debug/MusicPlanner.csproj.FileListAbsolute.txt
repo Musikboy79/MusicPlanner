@@ -258,3 +258,4 @@ G:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.Twitter.xml
 G:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 G:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.dll
 G:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.pdb
+G:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.csprojResolveAssemblyReference.cache
