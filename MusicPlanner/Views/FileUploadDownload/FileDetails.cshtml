@@ -1,22 +1,45 @@
 ﻿@model IEnumerable<MusicPlanner.Models.FileDetailsModel>
 
-<table class="table table-bordered">
-    <tr>
-        <th class="col-md-4">
-            @Html.DisplayNameFor(model => model.FileName)
-        </th>
-        <th class="col-md-2"></th>
-    </tr>
+@section Scripts{
+    <script src="~/Scripts/jquery-3.1.1.min.js"> </script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.FileName)
-        </td>
-        <td>
-            @Html.ActionLink("Download", "DownloadFile", new { id=item.Id})
-        </td>
-    </tr>
+    <script>
+        $(document).ready(function () {
+            $('#fileTable').dataTable({
+                "bpaginate": true,
+                "sPaginationType": "full_numbers",
+                "order": [[0, "desc"]]
+            });
+        });
+    </script>
 }
 
-</table>
+<div class="panel panel-primary">
+    <div class="panel-heading">File Details</div>
+    <table id="fileTable" class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="col-md-4">
+                    @Html.DisplayNameFor(model => model.FileName)
+                </th>
+                <th class="col-md-2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FileName)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Download", "DownloadFile", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
