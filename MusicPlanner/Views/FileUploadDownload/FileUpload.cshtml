@@ -4,6 +4,45 @@
     ViewBag.Title = "FileUpload";
 }
 
+@section Scripts{
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $('#fileTable').dataTable({
+                "bpaginate": true,
+                "sPaginationType": "full_numbers",
+            });
+        });
+    </script>
+
+    <style>
+            table.dataTable tbody tr {
+        background-color: #222222 !important;
+    }
+
+
+    .dataTables_info {
+        color: #333;
+    }
+
+    .dataTables_paginate {
+        color: #333;
+    }
+
+        div.dataTables_wrapper {
+        background-color: #2a9fd6 !important;
+    }
+
+    </style>
+
+}
+
 @using (Html.BeginForm("FileUpload", "FileUploadDownload", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
 
@@ -33,6 +72,5 @@
     </div>
 }
 
-<script src="~/Scripts/jquery-3.1.1.min.js"></script>
-<script src="~/Scripts/jquery.validate.min.js"></script>
-<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
