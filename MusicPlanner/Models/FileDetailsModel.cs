@@ -11,7 +11,7 @@ namespace MusicPlanner.Models
     public class FileDetailsModel
     {
         public int Id { get; set; }
-        [Display(Name="Uploaded File")]
+        [Display(Name="Available Files")]
         public string FileName { get; set; }
         public byte[] FileContent { get; set; }
     }
