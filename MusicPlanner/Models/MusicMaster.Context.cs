@@ -27,5 +27,6 @@ namespace MusicPlanner.Models
     
         public virtual DbSet<Choir> Choir { get; set; }
         public virtual DbSet<NewMonthlyMusic> NewMonthlyMusic { get; set; }
+        public virtual DbSet<Files> Files { get; set; }
     }
 }
