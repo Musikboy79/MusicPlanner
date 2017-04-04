@@ -15,7 +15,6 @@ namespace MusicPlanner.Models
     public partial class Files
     {
         public int id { get; set; }
-        public System.Guid IdFile { get; set; }
         public string Title { get; set; }
         public byte[] File { get; set; }
     }

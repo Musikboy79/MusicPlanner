@@ -209,6 +209,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ChoirController.cs" />
+    <Compile Include="Controllers\FileStreamController.cs" />
     <Compile Include="Models\Choir.cs">
       <DependentUpon>MusicMaster.tt</DependentUpon>
     </Compile>
@@ -224,6 +225,10 @@
     <Compile Include="Models\EmpModel.cs" />
     <Compile Include="Models\FileDetailsModel.cs" />
     <Compile Include="Models\FileModel.cs" />
+    <Compile Include="Models\Files.cs">
+      <DependentUpon>MusicMaster.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FileViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MonthlyMusicViewModel.cs" />
@@ -644,6 +649,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\FileStream\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
