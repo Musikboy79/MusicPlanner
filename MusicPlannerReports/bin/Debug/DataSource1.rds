@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DataSource1">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=173.88.251.215;initial catalog=MusicMaster</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>b789c8b5-d501-4edd-9afe-52d419fcaad1</DataSourceID>
+</RptDataSource>

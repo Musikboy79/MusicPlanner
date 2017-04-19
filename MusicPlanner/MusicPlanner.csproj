@@ -85,6 +85,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="MvcReportViewer, Version=0.8.5816.27247, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MvcReportViewer.0.8.3\lib\net45\MvcReportViewer.dll</HintPath>
       <Private>True</Private>
@@ -251,6 +252,13 @@
       <DependentUpon>MusicMaster.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ChoirMembers.aspx.cs">
+      <DependentUpon>ChoirMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ChoirMembers.aspx.designer.cs">
+      <DependentUpon>ChoirMembers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -488,6 +496,7 @@
     </Content>
     <Content Include="MvcReportViewer.aspx" />
     <Content Include="MvcReportViewerErrorPage.html" />
+    <Content Include="Reports\ChoirMembers.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
