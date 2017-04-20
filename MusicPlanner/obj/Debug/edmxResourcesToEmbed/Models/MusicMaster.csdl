@@ -38,5 +38,15 @@
   <EntityContainer Name="MusicMasterEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Choir" EntityType="Self.Choir" />
     <EntitySet Name="NewMonthlyMusic" EntityType="Self.NewMonthlyMusic" />
+    <EntitySet Name="Files" EntityType="MusicMasterModel.Files" />
   </EntityContainer>
+  <EntityType Name="Files">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdFile" Type="Guid" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="File" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
 </Schema>

@@ -16,6 +16,15 @@
     <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Active" Type="bit" />
   </EntityType>
+  <EntityType Name="Files">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFile" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="File" Type="varbinary(max)" />
+  </EntityType>
   <EntityType Name="NewMonthlyMusic">
     <Key>
       <PropertyRef Name="MusicID" />
@@ -37,6 +46,7 @@
   </EntityType>
   <EntityContainer Name="MusicMasterModelStoreContainer">
     <EntitySet Name="Choir" EntityType="Self.Choir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Files" EntityType="Self.Files" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NewMonthlyMusic" EntityType="Self.NewMonthlyMusic" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

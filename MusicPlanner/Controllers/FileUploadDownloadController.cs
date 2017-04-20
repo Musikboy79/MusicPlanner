@@ -39,6 +39,18 @@ namespace MusicPlanner.Controllers
                 SaveFileDetails(Fd);
                 return RedirectToAction("FileUpload");
             }
+            if(FileExt == ".MP3")
+            {
+                Stream str = files.InputStream;
+                BinaryReader Br = new BinaryReader(str);
+                Byte[] FileDet = Br.ReadBytes((Int32)str.Length);
+
+                FileDetailsModel Fd = new Models.FileDetailsModel();
+                Fd.FileName = files.FileName;
+                Fd.FileContent = FileDet;
+                SaveFileDetails(Fd);
+                return RedirectToAction("FileUpload");
+            }
             else
             {
                 ViewBag.FileStatus = "Invalid File Format";
