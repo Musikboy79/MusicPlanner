@@ -233,6 +233,8 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MonthlyMusicViewModel.cs" />
+    <Compile Include="Models\MP3FileDetailsModel.cs" />
+    <Compile Include="Models\MP3FileModel.cs" />
     <Compile Include="Models\MusicMaster.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -658,7 +660,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\FileStream\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
