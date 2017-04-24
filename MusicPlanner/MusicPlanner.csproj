@@ -658,8 +658,9 @@
     <Content Include="Views\Choir\Edit.cshtml" />
     <Content Include="Views\Choir\Index.cshtml" />
     <Content Include="Views\Choir\Unindex.cshtml" />
-    <Content Include="Views\MP3FileUpload\MP3FileDetails.cshtml" />
+    <Content Include="Views\MP3FileUpload\MP3FileDetailsOld.cshtml" />
     <Content Include="Views\MP3FileUpload\MP3FileUpload.cshtml" />
+    <Content Include="Views\MP3FileUpload\MP3FileDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -18,13 +18,12 @@
                 <tr>
                     <td>
                         @Html.DisplayFor(modelItem => item.FileName)
-                    </td>
+                        </td>
                     <td>
-                        @Html.ActionLink("Download", "DownloadMP3", new { id = item.Id })
+                        @Html.ActionLink("Download", "DownloadMP3", new { id = item.Id})
                     </td>
-                </tr>
+                    </tr>
             }
         </tbody>
     </table>
 </div>
-
