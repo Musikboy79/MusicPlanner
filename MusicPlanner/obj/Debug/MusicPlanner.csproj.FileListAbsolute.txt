@@ -347,3 +347,4 @@ C:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.csprojResolveAss
 C:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.dll
 C:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.pdb
 C:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ReportViewer.WebForms.dll
+G:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ReportViewer.WebForms.dll

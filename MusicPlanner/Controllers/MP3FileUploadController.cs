@@ -1,22 +1,21 @@
-﻿using System;
+﻿using Dapper;
+using MusicPlanner.Models;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using MusicPlanner.Models;
-using System.IO;
-using Dapper;
-using System.Configuration;
-using System.Data.SqlClient;
-using System.Data;
 
 namespace MusicPlanner.Controllers
 {
-    public class FileUploadDownloadController : Controller
+    public class MP3FileUploadController : Controller
     {
-        [Authorize]
-        // GET: FileUploadDownload
-        public ActionResult FileUpload()
+        // GET: MP3FileUpload
+        public ActionResult MP3FileUpload()
         {
             return View();
         }
@@ -27,17 +26,17 @@ namespace MusicPlanner.Controllers
         {
             String FileExt = Path.GetExtension(files.FileName).ToUpper();
 
-            if (FileExt ==".PDF")
+            if (FileExt == ".MP3")
             {
                 Stream str = files.InputStream;
                 BinaryReader Br = new BinaryReader(str);
                 Byte[] FileDet = Br.ReadBytes((Int32)str.Length);
 
-                FileDetailsModel Fd = new Models.FileDetailsModel();
+                MP3FileDetailsModel Fd = new Models.MP3FileDetailsModel();
                 Fd.FileName = files.FileName;
                 Fd.FileContent = FileDet;
-                SaveFileDetails(Fd);
-                return RedirectToAction("FileUpload");
+                SaveMP3FileDetails(Fd);
+                return RedirectToAction("MP3FileUpload");
             }
             else
             {
@@ -48,46 +47,46 @@ namespace MusicPlanner.Controllers
 
         [Authorize]
         [HttpGet]
-        public FileResult DownloadFile (int id)
+        public FileResult DownloadMP3(int id)
         {
-            List<FileDetailsModel> ObjFiles = GetFileList();
+            List<MP3FileDetailsModel> ObjFiles = GetMp3FileList();
 
             var FileById = (from FC in ObjFiles
                             where FC.Id.Equals(id)
                             select new { FC.FileName, FC.FileContent }).ToList().FirstOrDefault();
-            return File(FileById.FileContent, "application/pdf", FileById.FileName);
+            return File(FileById.FileContent, "application/mp3", FileById.FileName);
         }
 
         [Authorize]
         [HttpGet]
-        public PartialViewResult FileDetails()
+        public PartialViewResult MP3FileDetails()
         {
-            List<FileDetailsModel> DetList = GetFileList();
+            List<MP3FileDetailsModel> DetList = GetMp3FileList();
 
-            return PartialView("FileDetails", DetList);
+            return PartialView("MP3FileDetails", DetList);
         }
 
         [Authorize]
-        private List<FileDetailsModel> GetFileList()
+        private List<MP3FileDetailsModel> GetMp3FileList()
         {
-            List<FileDetailsModel> DetList = new List<FileDetailsModel>();
+            List<MP3FileDetailsModel> MP3List = new List<MP3FileDetailsModel>();
             DbConnection();
             con.Open();
-            DetList = SqlMapper.Query<FileDetailsModel>
-                (con, "GetFileDetails", commandType: CommandType.StoredProcedure).ToList();
+            MP3List = SqlMapper.Query<MP3FileDetailsModel>
+                (con, "GetMP3FileDetails", commandType: CommandType.StoredProcedure).ToList();
             con.Close();
-            return DetList;
+            return MP3List;
         }
 
         [Authorize]
-        private void SaveFileDetails(FileDetailsModel objDet)
+        private void SaveMP3FileDetails(MP3FileDetailsModel objMp3)
         {
             DynamicParameters Parm = new DynamicParameters();
-            Parm.Add("@FileName", objDet.FileName);
-            Parm.Add("@FileContent", objDet.FileContent);
+            Parm.Add("@FileName", objMp3.FileName);
+            Parm.Add("@FileContent", objMp3.FileContent);
             DbConnection();
             con.Open();
-            con.Execute("AddFileDetails", Parm, commandType: System.Data.CommandType.StoredProcedure);
+            con.Execute("AddMP3FileDetails", Parm, commandType: CommandType.StoredProcedure);
             con.Close();
         }
 
