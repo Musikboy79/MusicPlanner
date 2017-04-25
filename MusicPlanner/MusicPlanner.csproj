@@ -80,6 +80,10 @@
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.TraceListener, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.TraceListener.2.2.0\lib\net45\Microsoft.ApplicationInsights.TraceListener.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -211,7 +215,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ChoirController.cs" />
     <Compile Include="Controllers\FileStreamController.cs" />
-    <Compile Include="Controllers\MP3FileUploadController.cs" />
+    <Compile Include="Controllers\MP3FileUploadDownloadController.cs" />
     <Compile Include="Models\Choir.cs">
       <DependentUpon>MusicMaster.tt</DependentUpon>
     </Compile>
@@ -234,6 +238,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MonthlyMusicViewModel.cs" />
+    <Compile Include="Models\MP3EmpModel.cs" />
     <Compile Include="Models\MP3FileDetailsModel.cs" />
     <Compile Include="Models\MP3FileModel.cs" />
     <Compile Include="Models\MusicMaster.Context.cs">
@@ -658,9 +663,9 @@
     <Content Include="Views\Choir\Edit.cshtml" />
     <Content Include="Views\Choir\Index.cshtml" />
     <Content Include="Views\Choir\Unindex.cshtml" />
-    <Content Include="Views\MP3FileUpload\MP3FileDetailsOld.cshtml" />
-    <Content Include="Views\MP3FileUpload\MP3FileUpload.cshtml" />
-    <Content Include="Views\MP3FileUpload\MP3FileDetails.cshtml" />
+    <Content Include="Views\MP3FileUploadDownload\MP3FileDetails.cshtml" />
+    <Content Include="Views\MP3FileUploadDownload\MP3FileDetailsOld.cshtml" />
+    <Content Include="Views\MP3FileUploadDownload\MP3FileUpload.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MusicPlanner.Models.MP3FileDetailsModel>
+
+
+<div id="MP3FileDetailsPanel" class="panel panel-info">
+    <div class="panel-heading">MP3 Files Library</div>
+    <table id="tblMP3Details" vocab="table table-boardered">
+        <thead>
+            <tr>
+                <th class="col-md-4">
+                    @Html.DisplayNameFor(model => model.FileName)
+                </th>
+                <th class="col-md-2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FileName)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Download", "DownloadMP3", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

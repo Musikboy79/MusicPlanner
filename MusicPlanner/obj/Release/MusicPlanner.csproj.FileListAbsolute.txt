@@ -259,3 +259,6 @@ F:\Development\MusicPlanner\MusicPlanner\bin\images\musicbg2.jpg
 F:\Development\MusicPlanner\MusicPlanner\bin\Dapper.dll
 F:\Development\MusicPlanner\MusicPlanner\bin\MvcReportViewer.dll
 F:\Development\MusicPlanner\MusicPlanner\bin\Dapper.xml
+G:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.dll
+G:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ReportViewer.WebForms.dll
+G:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.xml
