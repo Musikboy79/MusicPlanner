@@ -51,15 +51,25 @@
     div.dataTables_wrapper {
         background-color: #2a9fd6 !important;
     }
+
+    #MusicPanel {
+        width: 1400px !important;
+    }
+
+    #musicTable_filter{
+        margin-right: 10px !important;
+    }
 </style>
 
-<h2>Monthly Music</h2>
-
+<br />
 <p>
     <a href="@Url.Action("Create", "MonthlyMusic")" class="btn btn-info">Create</a>
 </p>
-<table id="musicTable" class="table table-responsive">
-    <thead>
+
+<div id="MusicPanel" class="panel panel-primary">
+    <div class="panel-heading">Monthly Music</div>
+    <table id="musicTable" class="table table-responsive">
+        <thead>
         <tr>
             <th></th>
             <th>
@@ -99,14 +109,14 @@
                 @Html.DisplayNameFor(model => model.ClosingNumber)
             </th>
         </tr>
-    </thead>
-    <tbody>
+        </thead>
+        <tbody>
         @foreach (var item in Model)
         {
             <tr>
                 <td style="white-space: nowrap;">
-                    <a href="@Url.Action("Edit","MonthlyMusic", new {id=item.MusicID})" title="Edit Monthly Music" class="btn btn-primary">Edit</a>
-                    <a href="@Url.Action("Delete","MonthlyMusic", new {id=item.MusicID})" title="Delete Entry" class="btn btn-danger">Delete</a>
+                    <a href="@Url.Action("Edit", "MonthlyMusic", new {id = item.MusicID})" title="Edit Monthly Music" class="btn btn-primary">Edit</a>
+                    <a href="@Url.Action("Delete", "MonthlyMusic", new {id = item.MusicID})" title="Delete Entry" class="btn btn-danger">Delete</a>
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Date)
@@ -146,5 +156,6 @@
                 </td>
             </tr>
         }
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</div>

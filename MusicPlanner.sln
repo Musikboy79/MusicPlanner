@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicPlanner", "MusicPlanne
 EndProject
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "MusicPlannerReports", "MusicPlannerReports\MusicPlannerReports.rptproj", "{AB044C20-6802-4C66-AC2B-8D7BAB6EED4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicPlayer", "MusicPlayer\MusicPlayer.csproj", "{549396B3-0540-4F22-B7CF-6FE21AD35BAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustBlog", "JustBlog\JustBlog.csproj", "{F8D8C450-0181-4997-94D5-C83076F5132B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustBlog.Core", "JustBlog.Core\JustBlog.Core.csproj", "{1BF78ED7-EB8D-4EE3-8AFD-2BBD44F56660}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +34,24 @@ Global
 		{AB044C20-6802-4C66-AC2B-8D7BAB6EED4B}.Release|Any CPU.ActiveCfg = Release
 		{AB044C20-6802-4C66-AC2B-8D7BAB6EED4B}.Release|Any CPU.Build.0 = Release
 		{AB044C20-6802-4C66-AC2B-8D7BAB6EED4B}.Release|Any CPU.Deploy.0 = Release
+		{549396B3-0540-4F22-B7CF-6FE21AD35BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549396B3-0540-4F22-B7CF-6FE21AD35BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549396B3-0540-4F22-B7CF-6FE21AD35BAE}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{549396B3-0540-4F22-B7CF-6FE21AD35BAE}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{549396B3-0540-4F22-B7CF-6FE21AD35BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549396B3-0540-4F22-B7CF-6FE21AD35BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D8C450-0181-4997-94D5-C83076F5132B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D8C450-0181-4997-94D5-C83076F5132B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D8C450-0181-4997-94D5-C83076F5132B}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D8C450-0181-4997-94D5-C83076F5132B}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{F8D8C450-0181-4997-94D5-C83076F5132B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D8C450-0181-4997-94D5-C83076F5132B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BF78ED7-EB8D-4EE3-8AFD-2BBD44F56660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF78ED7-EB8D-4EE3-8AFD-2BBD44F56660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF78ED7-EB8D-4EE3-8AFD-2BBD44F56660}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF78ED7-EB8D-4EE3-8AFD-2BBD44F56660}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{1BF78ED7-EB8D-4EE3-8AFD-2BBD44F56660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF78ED7-EB8D-4EE3-8AFD-2BBD44F56660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
