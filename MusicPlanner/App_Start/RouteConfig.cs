@@ -16,7 +16,14 @@ namespace MusicPlanner
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new {controller = "Home", action = "Index", id = UrlParameter.Optional}
+            );
+
+            routes.MapRoute(
+                name: "Blog",
+                url: "{controller}/{action}/{id}",
+                namespaces: new[] {"[JustBlog]"},
+                defaults: new {controller = "BlogController", action = "List", id = UrlParameter.Optional}
             );
         }
     }

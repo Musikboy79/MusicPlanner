@@ -351,11 +351,4 @@ G:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.pdb
 G:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.csprojResolveAssemblyReference.cache
 C:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.dll
 C:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.xml
-C:\Development\MusicPlanner\MusicPlanner\bin\FluentNHibernate.dll
-C:\Development\MusicPlanner\MusicPlanner\bin\Iesi.Collections.dll
-C:\Development\MusicPlanner\MusicPlanner\bin\NHibernate.dll
-C:\Development\MusicPlanner\MusicPlanner\bin\FluentNHibernate.pdb
-C:\Development\MusicPlanner\MusicPlanner\bin\FluentNHibernate.xml
-C:\Development\MusicPlanner\MusicPlanner\bin\Iesi.Collections.xml
-C:\Development\MusicPlanner\MusicPlanner\bin\NHibernate.xml
 C:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.csprojResolveAssemblyReference.cache
