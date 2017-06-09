@@ -215,6 +215,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ChoirController.cs" />
     <Compile Include="Controllers\FileStreamController.cs" />
+    <Compile Include="Controllers\MonthlyMusicSheetController.cs" />
     <Compile Include="Controllers\MP3FileUploadDownloadController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
     <Compile Include="Models\Choir.cs">
@@ -238,6 +239,7 @@
     <Compile Include="Models\FileViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MonthlyMusicSheetDetailsModel.cs" />
     <Compile Include="Models\MonthlyMusicViewModel.cs" />
     <Compile Include="Models\MP3EmpModel.cs" />
     <Compile Include="Models\MP3FileDetailsModel.cs" />
@@ -682,6 +684,7 @@
     <Content Include="Views\MP3FileUploadDownload\MP3FileDetails.cshtml" />
     <Content Include="Views\MP3FileUploadDownload\MP3FileDetailsOld.cshtml" />
     <Content Include="Views\MP3FileUploadDownload\MP3FileUpload.cshtml" />
+    <Content Include="Views\MonthlyMusicSheet\MonthlyMusicSheetUpload.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
