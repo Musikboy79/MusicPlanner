@@ -352,3 +352,5 @@ G:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.csprojResolveAss
 C:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.dll
 C:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.xml
 C:\Development\MusicPlanner\MusicPlanner\obj\Debug\MusicPlanner.csprojResolveAssemblyReference.cache
+F:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.dll
+F:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.xml

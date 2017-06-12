@@ -685,6 +685,7 @@
     <Content Include="Views\MP3FileUploadDownload\MP3FileDetailsOld.cshtml" />
     <Content Include="Views\MP3FileUploadDownload\MP3FileUpload.cshtml" />
     <Content Include="Views\MonthlyMusicSheet\MonthlyMusicSheetUpload.cshtml" />
+    <Content Include="Views\MonthlyMusicSheet\MonthlyMusicSheetDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
