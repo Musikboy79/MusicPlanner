@@ -6,14 +6,11 @@ using System.Web;
 
 namespace MusicPlanner.Models
 {
-    public class EmpModel
+    public class MonthlyMusicSheetModel
     {
         [Required]
         [DataType(DataType.Upload)]
-        [Display(Name = "Select File")]
-        public HttpPostedFileBase files { get; set; }
-        public HttpPostedFileBase mp3Files { get; set; }
+        [Display(Name="Select File")]
         public HttpPostedFileBase musicSheetFiles { get; set; }
     }
-
 }

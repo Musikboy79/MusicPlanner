@@ -240,6 +240,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MonthlyMusicSheetDetailsModel.cs" />
+    <Compile Include="Models\MonthlyMusicSheetModel.cs" />
     <Compile Include="Models\MonthlyMusicViewModel.cs" />
     <Compile Include="Models\MP3EmpModel.cs" />
     <Compile Include="Models\MP3FileDetailsModel.cs" />

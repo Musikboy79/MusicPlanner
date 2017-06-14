@@ -9,7 +9,6 @@ using Dapper;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
-using System.Data.Common;
 
 namespace MusicPlanner.Controllers
 {
@@ -31,12 +30,12 @@ namespace MusicPlanner.Controllers
             {
                 Stream str = files.InputStream;
                 BinaryReader Br = new BinaryReader(str);
-                Byte[] FileDet = Br.ReadBytes((Int32) str.Length);
+                Byte[] FileDet = Br.ReadBytes((Int32)str.Length);
 
-                MonthlyMusicSheetDetailsModel Md = new Models.MonthlyMusicSheetDetailsModel();
-                Md.FileName = files.FileName;
-                Md.FileContent = FileDet;
-                SaveFileDetails(Md);
+                MonthlyMusicSheetDetailsModel Fd = new MonthlyMusicSheetDetailsModel();
+                Fd.FileName = files.FileName;
+                Fd.FileContent = FileDet;
+                SaveFileDetails(Fd);
                 return RedirectToAction("MonthlyMusicSheetUpload");
             }
             else

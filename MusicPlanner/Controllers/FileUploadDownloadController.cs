@@ -33,7 +33,7 @@ namespace MusicPlanner.Controllers
                 BinaryReader Br = new BinaryReader(str);
                 Byte[] FileDet = Br.ReadBytes((Int32)str.Length);
 
-                FileDetailsModel Fd = new Models.FileDetailsModel();
+                FileDetailsModel Fd = new FileDetailsModel();
                 Fd.FileName = files.FileName;
                 Fd.FileContent = FileDet;
                 SaveFileDetails(Fd);
