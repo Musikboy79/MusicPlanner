@@ -352,3 +352,5 @@ C:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.Owin.Security.MicrosoftAc
 C:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.csprojResolveAssemblyReference.cache
 C:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.dll
 C:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.pdb
+F:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.dll
+F:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.xml

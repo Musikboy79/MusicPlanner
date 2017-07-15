@@ -12,8 +12,16 @@ namespace MusicPlanner.Models
         [DataType(DataType.Upload)]
         [Display(Name = "Select File")]
         public HttpPostedFileBase files { get; set; }
+
+        [Required]
+        [DataType(DataType.Upload)]
+        [Display(Name = "Select MP3 File")]
         public HttpPostedFileBase mp3Files { get; set; }
-        public HttpPostedFileBase musicSheetFiles { get; set; }
+
+        [Required]
+        [DataType(DataType.Upload)]
+        [Display(Name = "Select Music Schedule File")]
+        public HttpPostedFileBase schedMusicSheetFiles { get; set; }
     }
 
 }

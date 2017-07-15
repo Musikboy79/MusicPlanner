@@ -6,12 +6,11 @@ using System.Web;
 
 namespace MusicPlanner.Models
 {
-    public class MonthlyMusicSheetDetailsModel
+    public class SchedMusicFileDetailsModel
     {
         public int Id { get; set; }
-        [Display(Name = "Available Monthly Music Sheets")]
+        [Display(Name = "Upload File")]
         public string FileName { get; set; }
         public byte[] FileContent { get; set; }
-
     }
 }

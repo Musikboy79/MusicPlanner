@@ -215,8 +215,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ChoirController.cs" />
     <Compile Include="Controllers\FileStreamController.cs" />
-    <Compile Include="Controllers\MonthlyMusicSheetController.cs" />
     <Compile Include="Controllers\MP3FileUploadDownloadController.cs" />
+    <Compile Include="Controllers\SchedMusicUploadDownloadController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
     <Compile Include="Models\Choir.cs">
       <DependentUpon>MusicMaster.tt</DependentUpon>
@@ -239,8 +239,6 @@
     <Compile Include="Models\FileViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\MonthlyMusicSheetDetailsModel.cs" />
-    <Compile Include="Models\MonthlyMusicSheetModel.cs" />
     <Compile Include="Models\MonthlyMusicViewModel.cs" />
     <Compile Include="Models\MP3EmpModel.cs" />
     <Compile Include="Models\MP3FileDetailsModel.cs" />
@@ -263,6 +261,7 @@
     <Compile Include="Models\NewMonthlyMusic.cs">
       <DependentUpon>MusicMaster.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\SchedMusicFileDetailsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reports\ChoirMembers.aspx.cs">
       <DependentUpon>ChoirMembers.aspx</DependentUpon>
@@ -685,11 +684,12 @@
     <Content Include="Views\MP3FileUploadDownload\MP3FileDetails.cshtml" />
     <Content Include="Views\MP3FileUploadDownload\MP3FileDetailsOld.cshtml" />
     <Content Include="Views\MP3FileUploadDownload\MP3FileUpload.cshtml" />
-    <Content Include="Views\MonthlyMusicSheet\MonthlyMusicSheetUpload.cshtml" />
-    <Content Include="Views\MonthlyMusicSheet\MonthlyMusicSheetDetails.cshtml" />
+    <Content Include="Views\SchedMusicUploadDownload\FileUpload.cshtml" />
+    <Content Include="Views\SchedMusicUploadDownload\FileDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Classes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

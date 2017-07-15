@@ -1,0 +1,29 @@
+﻿@using Antlr.Runtime.Tree
+@model IEnumerable<MusicPlanner.Models.SchedMusicFileDetailsModel>
+
+<div id="SchedMusicFileDetailsPanel" class="panel panel-success">
+    <div class="panel-heading">Music Schedule Library</div>
+    <table id="tblSchedMusic" class="table table-bordered">
+        <thead>
+        <tr>
+            <th class="col-md-4">
+                @Html.DisplayNameFor(model => model.FileName)
+            </th>
+            <th class="col-md-4"></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelitem => item.FileName)
+                </td>
+                <td>
+                    @Html.ActionLink("Download", "DownloadMusicSheet", new {id = item.Id}, new {@class = "btn btn-success"})
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
