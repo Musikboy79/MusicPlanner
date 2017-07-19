@@ -214,7 +214,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ChoirController.cs" />
-    <Compile Include="Controllers\FileStreamController.cs" />
     <Compile Include="Controllers\MP3FileUploadDownloadController.cs" />
     <Compile Include="Controllers\SchedMusicUploadDownloadController.cs" />
     <Compile Include="Controllers\SharedController.cs" />

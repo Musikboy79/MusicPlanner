@@ -80,6 +80,19 @@ namespace MusicPlanner.Controllers
         }
 
         [Authorize]
+        public ActionResult DeleteFileDetails(FileDetailsModel objDet)
+        {
+            DynamicParameters Parm = new DynamicParameters();
+            Parm.Add("@FileId", objDet.Id);
+            DbConnection();
+            con.Open();
+            con.Execute("DeleteFileDetails", Parm, commandType: CommandType.StoredProcedure);
+            con.Close();
+
+            return RedirectToAction("FileUpload");
+        }
+
+        [Authorize]
         private void SaveFileDetails(FileDetailsModel objDet)
         {
             DynamicParameters Parm = new DynamicParameters();

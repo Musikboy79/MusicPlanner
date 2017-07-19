@@ -21,8 +21,9 @@
                     </td>
                     <td>
                         @Html.ActionLink("Download", "DownloadMP3", new { id = item.Id}, new {@class = "btn btn-success"})
+                        @Html.ActionLink("Delete", "DeleteMP3File", new {id = item.Id}, new {@class = "btn btn-danger"})
                     </td>
-                </tr>
+                    </tr>
             }
         </tbody>
     </table>

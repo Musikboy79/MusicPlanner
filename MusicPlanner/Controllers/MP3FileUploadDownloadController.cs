@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.Owin.Security.Provider;
 
 namespace MusicPlanner.Controllers
 {
@@ -90,6 +91,18 @@ namespace MusicPlanner.Controllers
             con.Close();
         }
 
+        [Authorize]
+        public ActionResult DeleteMP3File(MP3FileDetailsModel objMp3)
+        {
+            DynamicParameters Parm = new DynamicParameters();
+            Parm.Add("@MP3FileID", objMp3.Id);
+            DbConnection();
+            con.Open();
+            con.Execute("DeleteMP3FileDetails", Parm, commandType: CommandType.StoredProcedure);
+            con.Close();
+
+            return RedirectToAction("MP3FileUpload");
+        }
         private SqlConnection con;
         private string constr;
         private void DbConnection()

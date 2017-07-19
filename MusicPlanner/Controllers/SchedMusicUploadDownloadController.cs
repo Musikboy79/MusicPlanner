@@ -89,7 +89,7 @@ namespace MusicPlanner.Controllers
         public ActionResult DeleteMusicSheet(SchedMusicFileDetailsModel objDet)
         {
             DynamicParameters Parm = new DynamicParameters();
-            Parm.Add("@ID", objDet.Id);
+            Parm.Add("@MusicSheetID", objDet.Id);
             DbConnection();
             con.Open();
             con.Execute("DeleteSchedMusicFileDetails", Parm, commandType: CommandType.StoredProcedure);
