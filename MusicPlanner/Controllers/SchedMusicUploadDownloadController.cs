@@ -47,7 +47,7 @@ namespace MusicPlanner.Controllers
             }
         }
 
-        #endregion
+       #endregion
 
         [Authorize]
         [HttpGet]
@@ -86,6 +86,20 @@ namespace MusicPlanner.Controllers
         }
 
         [Authorize]
+        public ActionResult DeleteMusicSheet(SchedMusicFileDetailsModel objDet)
+        {
+            DynamicParameters Parm = new DynamicParameters();
+            Parm.Add("@ID", objDet.Id);
+            DbConnection();
+            con.Open();
+            con.Execute("DeleteSchedMusicFileDetails", Parm, commandType: CommandType.StoredProcedure);
+            con.Close();
+
+            return RedirectToAction("FileUpload");
+
+        }
+
+        [Authorize]
         private void SaveFileDetails(SchedMusicFileDetailsModel objDet)
         {
             DynamicParameters Parm = new DynamicParameters();
@@ -95,6 +109,7 @@ namespace MusicPlanner.Controllers
             con.Open();
             con.Execute("AddSchedMusicFileDetails", Parm, commandType: CommandType.StoredProcedure);
             con.Close();
+
         }
 
         private SqlConnection con;
