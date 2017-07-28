@@ -41,6 +41,9 @@
                         <input type="submit" value="Log in" class="btn btn-default" />
                     </div>
                 </div>
+                <p>
+                    @Html.ActionLink("Reset My Password", "ResetPassword", "Account")
+                </p>
                 @*<p>
                     @Html.ActionLink("Register as a new user", "Register")
                 </p>*@
@@ -51,11 +54,11 @@
             }
         </section>
     </div>
-    <div class="col-md-4">
+    @*<div class="col-md-4">
         <section id="socialLoginForm">
             @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
         </section>
-    </div>
+    </div>*@
 </div>
 
 @section Scripts {

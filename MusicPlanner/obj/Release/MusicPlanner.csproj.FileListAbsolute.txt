@@ -354,3 +354,5 @@ C:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.dll
 C:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.pdb
 F:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.dll
 F:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.xml
+F:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.Properties.Resources.resources
+F:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.csproj.GenerateResource.Cache

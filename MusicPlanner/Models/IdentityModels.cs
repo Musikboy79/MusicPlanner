@@ -31,5 +31,7 @@ namespace MusicPlanner.Models
         }
 
         public System.Data.Entity.DbSet<MusicPlanner.Models.FileDetailsModel> FileDetailsModels { get; set; }
+
+        public System.Data.Entity.DbSet<MusicPlanner.Models.MyMailModel> MyMailModels { get; set; }
     }
 }

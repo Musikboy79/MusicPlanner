@@ -1,0 +1,63 @@
+﻿@model MusicPlanner.Models.MyMailModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script>
+    $(document).ready(function() {
+        if ('@ViewBag.Message' == 'Sent') {
+            alert('Message Has Been Sent Successfully');
+        }
+    });
+</script>
+
+<style>
+    td {
+        color: black;
+    }
+</style>
+<fieldset>
+    <legend>Send Email</legend>
+    @using (@Html.BeginForm("Index", "MailMessaging", FormMethod.Post, new {@id = "form1", @enctype = "multipart/form-data"}))
+    {
+        @Html.ValidationSummary()
+        <table style="background-color: aliceblue">
+            <tr>
+                <td>@Html.LabelFor(m => m.To)
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.To)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Subject)
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Subject)
+                </td>
+            </tr>
+            <tr>
+                <td><label>Attachment</label>
+                </td>
+                <td>
+                    <input type="file" name="fileUploader"/>
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Body)
+                </td>
+                <td>
+                    @Html.TextAreaFor(m => m.Body)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Send" class="btn btn-primary"/>
+                </td>
+            </tr>
+        </table>
+    }
+</fieldset>
+
