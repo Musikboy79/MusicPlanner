@@ -1,7 +1,7 @@
 ﻿@model MusicPlanner.Models.MyMailModel
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Send Us An Email";
 }
 
 <script>
@@ -16,48 +16,64 @@
     td {
         color: black;
     }
-</style>
-<fieldset>
-    <legend>Send Email</legend>
-    @using (@Html.BeginForm("Index", "MailMessaging", FormMethod.Post, new {@id = "form1", @enctype = "multipart/form-data"}))
-    {
-        @Html.ValidationSummary()
-        <table style="background-color: aliceblue">
-            <tr>
-                <td>@Html.LabelFor(m => m.To)
-                </td>
-                <td>
-                    @Html.TextBoxFor(m => m.To)
-                </td>
-            </tr>
-            <tr>
-                <td>@Html.LabelFor(m => m.Subject)
-                </td>
-                <td>
-                    @Html.TextBoxFor(m => m.Subject)
-                </td>
-            </tr>
-            <tr>
-                <td><label>Attachment</label>
-                </td>
-                <td>
-                    <input type="file" name="fileUploader"/>
-                </td>
-            </tr>
-            <tr>
-                <td>@Html.LabelFor(m => m.Body)
-                </td>
-                <td>
-                    @Html.TextAreaFor(m => m.Body)
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="submit" value="Send" class="btn btn-primary"/>
-                </td>
-            </tr>
-        </table>
-    }
-</fieldset>
 
+    #mailForm {
+        margin-left: 50px;
+    }
+</style>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Send Us An Email</div>
+    <div class="panel-body">
+        @using (@Html.BeginForm("Index", "MailMessaging", FormMethod.Post, new { @id = "form1", @enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal" id="mailForm">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(m => m.To, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.To, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Subject, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.Subject, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Attachment</label>
+                    <div class="col-md-10">
+                        <input class="form-control" input type="file" name="fileUploader" />
+                    </div>
+                </div>
+
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Body, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextAreaFor(m => m.Body, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <input type="submit" value="Send" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        }
+    </div>
+</div>
