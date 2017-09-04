@@ -17,6 +17,7 @@
             $('#fileTable').dataTable({
                 "bpaginate": true,
                 "sPaginationType": "full_numbers",
+                responsive: true
             });
         });
     </script>
@@ -44,50 +45,47 @@
             width: 1050px !important;
         }
 
-        #uploadFilePanel{
+        #uploadFilePanel {
             width: 1100px !important;
         }
     </style>
 
 }
 
+    <div id="uploadFilePanel" class="panel panel-primary">
+        <div class="panel-heading">Upload A File</div>
+        @using (Html.BeginForm("FileUpload", "FileUploadDownload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
 
-<div id="uploadFilePanel" class="panel panel-primary">
-    <div class="panel-heading">Upload A File</div>
-    @using (Html.BeginForm("FileUpload", "FileUploadDownload", FormMethod.Post, new { enctype = "multipart/form-data" }))
-    {
+            @Html.AntiForgeryToken()
 
-        @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.files, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.files, "", new { @type = "file", @multiple = "multiple", @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.files, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10 text-success">
+                        <input type="submit" value="Upload" class="btn btn-primary" />
+                    </div>
+                </div>
 
-        <div class="form-horizontal">
-            <hr />
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <div class="form-group">
-                @Html.LabelFor(model => model.files, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.TextBoxFor(model => model.files, "", new { @type = "file", @multiple = "multiple", @class="form-control" })
-                    @Html.ValidationMessageFor(model => model.files, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10 text-success">
+                        @ViewBag.FileStatus
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-8">
+                        @Html.Action("FileDetails", "FileUploadDownload")
+                    </div>
                 </div>
             </div>
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10 text-success">
-                    <input type="submit" value="Upload" class="btn btn-primary" />
-                </div>
-            </div>
-            
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10 text-success">
-                    @ViewBag.FileStatus 
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-8">
-                    @Html.Action("FileDetails", "FileUploadDownload")
-                </div>
-            </div>
-        </div>
-    }
-</div>
-
-
+        }
+    </div>

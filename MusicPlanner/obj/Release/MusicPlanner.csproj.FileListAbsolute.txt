@@ -260,7 +260,6 @@ F:\Development\MusicPlanner\MusicPlanner\bin\Dapper.dll
 F:\Development\MusicPlanner\MusicPlanner\bin\MvcReportViewer.dll
 F:\Development\MusicPlanner\MusicPlanner\bin\Dapper.xml
 G:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.dll
-G:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ReportViewer.WebForms.dll
 G:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.xml
 C:\Development\MusicPlanner\MusicPlanner\bin\ApplicationInsights.config
 C:\Development\MusicPlanner\MusicPlanner\bin\roslyn\csc.exe
@@ -356,3 +355,6 @@ F:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.Trace
 F:\Development\MusicPlanner\MusicPlanner\bin\Microsoft.ApplicationInsights.TraceListener.xml
 F:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.Properties.Resources.resources
 F:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.csproj.GenerateResource.Cache
+G:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.Properties.Resources.resources
+G:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.csproj.GenerateResource.Cache
+G:\Development\MusicPlanner\MusicPlanner\obj\Release\MusicPlanner.csproj.CoreCompileInputs.cache

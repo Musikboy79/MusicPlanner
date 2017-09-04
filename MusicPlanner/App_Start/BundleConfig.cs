@@ -26,8 +26,8 @@ namespace MusicPlanner
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/cyborg.css",
                       "~/Content/site.css",
+                      "~/Content/cyborg.css",
                       "~/Content/themes/base/datepicker.css",
                       "~/Content/jquery-ui.theme.css"
                       ));
