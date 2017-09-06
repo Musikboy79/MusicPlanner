@@ -231,6 +231,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\EmpModel.cs" />
+    <Compile Include="Models\ExpandedUserDTO.cs" />
     <Compile Include="Models\FileDetailsModel.cs" />
     <Compile Include="Models\FileModel.cs" />
     <Compile Include="Models\Files.cs">
