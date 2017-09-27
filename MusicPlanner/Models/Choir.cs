@@ -30,7 +30,7 @@ namespace MusicPlanner.Models
         public string Address1 { get; set; }
         public string City { get; set; }
         public string State { get; set; }
-        public int Zip { get; set; }
+        public Nullable <int> Zip { get; set; }
 
         [DisplayName("Home Ph.")]
         public string HomePhone { get; set; }
