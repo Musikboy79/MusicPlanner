@@ -7,12 +7,15 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MusicPlanner.Models;
+using CrystalDecisions.CrystalReports.Engine;
+using System.IO;
 
 namespace MusicPlanner.Controllers
 {
     public class ChoirController : Controller
     {
         private MusicMasterEntities db = new MusicMasterEntities();
+
 
         [Authorize]
         // GET: Choir

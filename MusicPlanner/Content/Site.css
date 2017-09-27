@@ -322,3 +322,66 @@ textarea {
         border-color: #000000;
     }
 /*PINK BUTTON*/
+
+/*TEAL PANEL*/
+.panel-teal {
+    border-color: #006666;
+}
+
+    .panel-teal > .panel-heading {
+        color: white;
+        background-color: #009999;
+        border-color: #006666;
+    }
+
+        .panel-teal > .panel-heading + .panel-collapse .panel-body {
+            border-top-color: #006666;
+        }
+
+    .panel-teal > .panel-footer + .panel-collapse .panel-body {
+        border-bottom-color: #006666;
+    }
+/*TEAL PANEL*/
+
+/*TEAL BUTTON*/
+.btn-teal {
+    color: #ffffff;
+    background-color: #009999;
+    border-color: #006666;
+}
+
+    .btn-teal:hover,
+    .btn-teal:focus,
+    .btn-teal:active,
+    .btn-teal.active,
+    .open .dropdown-toggle.btn-pink {
+        color: #ffffff;
+        background-color: #00CCCC;
+        border-color: #006666;
+    }
+
+    .btn-teal:active,
+    .btn-teal.active,
+    .open .dropdown-toggle.btn-pink {
+        background-image: none;
+    }
+
+    .btn-teal.disabled,
+    .btn-teal[disabled],
+    fieldset[disabled] .btn-teal,
+    .btn-teal.disabled:hover,
+    .btn-teal[disabled]:hover,
+    fieldset[disabled] .btn-teal:hover,
+    .btn-teal.disabled:focus,
+    .btn-teal[disabled]:focus,
+    fieldset[disabled] .btn-teal:focus,
+    .btn-teal.disabled:active,
+    .btn-teal[disabled]:active,
+    fieldset[disabled] .btn-teal:active,
+    .btn-teal.disabled.active,
+    .btn-teal[disabled].active,
+    fieldset[disabled] .btn-teal.active {
+        background-color: #cccccc;
+        border-color: #000000;
+    }
+/*TEAL BUTTON*/

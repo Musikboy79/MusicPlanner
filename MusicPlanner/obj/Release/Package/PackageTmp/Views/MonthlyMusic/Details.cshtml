@@ -4,119 +4,128 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<style>
+    #musicDetailsPanel
+    {
+        width: 50%;
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+</style>
 
-<div>
-    <h4>NewMonthlyMusic</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Date)
-        </dt>
+<div class="panel panel-teal" id="musicDetailsPanel">
+    <div class="panel-heading">Music Details For @Html.DisplayFor(model => model.churchDay)</div>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Date)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Date)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Date)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.churchDay)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.churchDay)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.churchDay)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.churchDay)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Opening)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Opening)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Opening)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Opening)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.OpeningNumber)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.OpeningNumber)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.OpeningNumber)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.OpeningNumber)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Psalm)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Psalm)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Psalm)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Psalm)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PsalmNumber)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.PsalmNumber)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PsalmNumber)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.PsalmNumber)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Preparation)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Preparation)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Preparation)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Preparation)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PreparationNumber)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.PreparationNumber)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PreparationNumber)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.PreparationNumber)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Communion)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Communion)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Communion)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Communion)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.CommunionNumber)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.CommunionNumber)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.CommunionNumber)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.CommunionNumber)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Closing)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Closing)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Closing)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Closing)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ClosingNumber)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.ClosingNumber)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ClosingNumber)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.ClosingNumber)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Notes)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Notes)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Notes)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Notes)
+            </dd>
 
-    </dl>
+        </dl>
+    </div>
+    <p style="margin-left: 10px;">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.MusicID }, new { @class = "btn btn-teal" }) |
+        <a href="@Url.Action("Index", "MonthlyMusic")" class="btn btn-primary">Back To List</a>
+    </p>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.MusicID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

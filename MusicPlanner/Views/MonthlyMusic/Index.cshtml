@@ -10,9 +10,31 @@
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/moment.js"></script>
+    <script src="~/Scripts/DataTables-moment.js"></script>
     <link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
 
     <script>
+            //jQuery.extend(jQuery.fn.dataTableExt.oSort, {
+            //    "date-range-pre": function (a) {
+            //        var monthArr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            //        return monthArr.indexOf(a);
+            //    },
+            //    "date-range-asc": function (a, b) {
+            //        return ((a < b) ? -1 : ((a > b) ? 1 : 0));
+            //    },
+            //    "date-range-desc": function (a, b) {
+            //        return ((a < b) ? 1 : ((a > b) ? -1 : 0));
+            //    }
+            //});
+
+            //var table = $('#musicTable').DataTable({
+            //    columnDefs: [
+            //        { type: 'date', targets: [1] }
+            //    ]
+            //})
         $(document).ready(function () {
             $('#musicTable').dataTable({
                 "bpaginate": true,
@@ -49,7 +71,7 @@
     }
 
     div.dataTables_wrapper {
-        background-color: #2a9fd6 !important;
+        background-color: #009999 !important;
     }
 
     #MusicPanel {
@@ -63,10 +85,10 @@
 
 <br />
 <p>
-    <a href="@Url.Action("Create", "MonthlyMusic")" class="btn btn-info">Create</a>
+    <a href="@Url.Action("Create", "MonthlyMusic")" class="btn btn-teal">Create</a>
 </p>
 
-<div id="MusicPanel" class="panel panel-primary">
+<div id="MusicPanel" class="panel panel-teal">
     <div class="panel-heading">Monthly Music</div>
     <table id="musicTable" class="table table-responsive">
         <thead>
@@ -81,33 +103,33 @@
             <th>
                 @Html.DisplayNameFor(model => model.Opening)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.OpeningNumber)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.Psalm)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.PsalmNumber)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.Preparation)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.PreparationNumber)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.Communion)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.CommunionNumber)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.Closing)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.ClosingNumber)
-            </th>
+            </th>*@
         </tr>
         </thead>
         <tbody>
@@ -117,6 +139,7 @@
                 <td style="white-space: nowrap;">
                     <a href="@Url.Action("Edit", "MonthlyMusic", new {id = item.MusicID})" title="Edit Monthly Music" class="btn btn-primary">Edit</a>
                     <a href="@Url.Action("Delete", "MonthlyMusic", new {id = item.MusicID})" title="Delete Entry" class="btn btn-danger">Delete</a>
+                    <a href="@Url.Action("Details", "MonthlyMusic", new {id = item.MusicID})" title="Music Details" class="btn btn-warning">Details</a>
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Date)
@@ -127,33 +150,33 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Opening)
                 </td>
-                <td>
+                @*<td>
                     @Html.DisplayFor(modelItem => item.OpeningNumber)
-                </td>
+                </td>*@
                 <td>
                     @Html.DisplayFor(modelItem => item.Psalm)
                 </td>
-                <td>
+                @*<td>
                     @Html.DisplayFor(modelItem => item.PsalmNumber)
-                </td>
+                </td>*@
                 <td>
                     @Html.DisplayFor(modelItem => item.Preparation)
                 </td>
-                <td>
+                @*<td>
                     @Html.DisplayFor(modelItem => item.PreparationNumber)
-                </td>
+                </td>*@
                 <td>
                     @Html.DisplayFor(modelItem => item.Communion)
                 </td>
-                <td>
+                @*<td>
                     @Html.DisplayFor(modelItem => item.CommunionNumber)
-                </td>
+                </td>*@
                 <td>
                     @Html.DisplayFor(modelItem => item.Closing)
                 </td>
-                <td>
+                @*<td>
                     @Html.DisplayFor(modelItem => item.ClosingNumber)
-                </td>
+                </td>*@
             </tr>
         }
         </tbody>
