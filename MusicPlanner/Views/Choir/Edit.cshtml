@@ -29,6 +29,7 @@
     @using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.ChoirID)
 
         <div class="form-horizontal" id="choirEditForm">
             <hr />
@@ -115,7 +116,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="form-group">
-                        @Html.LabelFor(model => model.Active, htmlAttributes: new { @class = "control-label col-md-6"})
+                        @Html.LabelFor(model => model.Active, htmlAttributes: new { @class = "control-label col-md-6" })
                         <div class="checkbox" style="margin-left:25px!important;">
                             @Html.EditorFor(model => model.Active)
                             @Html.ValidationMessageFor(model => model.Active, "", new { @class = "text-danger" })
@@ -127,7 +128,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="form-group">
-                        <input type="submit" value="Create" class="btn btn-default" />
+                        <input type="submit" value="Save" class="btn btn-default" />
                         <a href="@Url.Action("Index","Choir")" class="btn btn-primary">Back To List</a>
                     </div>
                 </div>

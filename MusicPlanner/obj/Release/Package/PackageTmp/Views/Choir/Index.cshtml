@@ -24,6 +24,10 @@
 }
 
 <style>
+    .panel{
+        margin-top: 10px;
+    }
+
     table.dataTable tbody tr {
         background-color: #222222 !important;
     }
@@ -61,6 +65,7 @@
 <p>
    <a href="@Url.Action("Create", "Choir")" class="btn btn-primary">Create</a>
     <a href="@Url.Action("Unindex" ,"Choir")" class="btn btn-purple">Unfilter</a>
+    <a href="@Url.Action("ExportChoirMembers", "ChoirReport")" class="btn btn-info">Choir Member List</a>"
 </p>
 
 <div class="panel panel-purple">
